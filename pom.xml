@@ -2,44 +2,91 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.craftvn</groupId>
   <artifactId>NgocPlugin</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>NgocPlugin</name>
+  <description>Plugin shop ngọc (PC chest GUI + PE FormUI)</description>
+
   <properties>
-    <java.version>21</java.version>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <paper.version>1.21.1-R0.1-SNAPSHOT</paper.version>
+    <floodgate.version>2.2.4-SNAPSHOT</floodgate.version>
+    <cumulus.version>1.1.2</cumulus.version>
   </properties>
+
+  <!-- Repositories -->
   <repositories>
+    <!-- Paper API -->
     <repository>
       <id>papermc-repo</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
+
+    <!-- GeyserMC / OpenCollab snapshots (Floodgate API snapshots) -->
+    <repository>
+      <id>opencollab-snapshots</id>
+      <url>https://repo.opencollab.dev/maven-snapshots/</url>
+    </repository>
+
+    <!-- GeyserMC / OpenCollab releases (Cumulus releases) -->
+    <repository>
+      <id>opencollab-releases</id>
+      <url>https://repo.opencollab.dev/maven-releases/</url>
+    </repository>
   </repositories>
+
   <dependencies>
+    <!-- Paper API -->
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
-      <version>1.21.1-R0.1-SNAPSHOT</version>
+      <version>${paper.version}</version>
       <scope>provided</scope>
     </dependency>
-    <!-- Optional: Floodgate API for Bedrock detection -->
+
+    <!-- Floodgate API (dùng để phát hiện Bedrock player). SNAPSHOT -> cần repo opencollab-snapshots -->
     <dependency>
       <groupId>org.geysermc.floodgate</groupId>
       <artifactId>api</artifactId>
-      <version>2.2.3</version>
+      <version>${floodgate.version}</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-    <!-- Optional: Cumulus Form API for Bedrock forms -->
+
+    <!-- Cumulus (Form API cho Bedrock FormUI). Có trên opencollab-releases -->
     <dependency>
       <groupId>org.geysermc.cumulus</groupId>
       <artifactId>cumulus</artifactId>
-      <version>1.1.2</version>
+      <version>${cumulus.version}</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Biên dịch Java 21 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+
+      <!-- (Tuỳ chọn) giảm log trong CI -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
