@@ -1,0 +1,148 @@
+gems:
+  tocdo:
+    name: "&bNgọc Tốc Độ"
+    material: SUGAR
+    exp: 10
+    items:
+      - "COAL:16"
+    sound: ENTITY_HORSE_GALLOP
+    lore:
+      - "➛ &7Kích hoạt: &fTốc độ II (15s)"
+      - "➛ &eYêu cầu: 16 Than + 10 Levels"
+
+  hoimau:
+    name: "&aNgọc Hồi Máu"
+    material: GOLDEN_APPLE
+    exp: 15
+    items:
+      - "IRON_BLOCK:32"
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    lore:
+      - "➛ &7Kích hoạt: &fHồi đầy máu + Regen II (10s)"
+      - "➛ &eYêu cầu: 32 Khối Sắt + 15 Levels"
+
+  sinhluc:
+    name: "&cNgọc Sinh Lực"
+    material: REDSTONE
+    exp: 20
+    items:
+      - "EMERALD:32"
+      - "DIAMOND_BLOCK:10"
+    sound: ENTITY_PLAYER_LEVELUP
+    lore:
+      - "➛ &7Kích hoạt: &f+10 máu (10s)"
+      - "➛ &eYêu cầu: 32 Lục Bảo + 10 Khối Kim Cương + 20 Levels"
+
+  phunlua:
+    name: "&6Ngọc Phun Lửa"
+    material: BLAZE_POWDER
+    exp: 10
+    items:
+      - "COAL_BLOCK:10"
+    sound: ITEM_FIRECHARGE_USE
+    lore:
+      - "➛ &7Kích hoạt: &fVòng lửa gây sát thương + cháy (5s)"
+      - "➛ &eYêu cầu: 10 Khối Than + 10 Levels"
+
+  tonhen:
+    name: "&fNgọc Tơ Nhện"
+    material: COBWEB
+    exp: 20
+    items:
+      - "EMERALD_BLOCK:32"
+      - "DIAMOND_BLOCK:64"
+    sound: ENTITY_SPIDER_AMBIENT
+    lore:
+      - "➛ &7Kích hoạt: &fSinh ra tơ nhện 5 block"
+      - "➛ &eTồn tại: 5 giây"
+      - "➛ &eYêu cầu: 32 Khối Lục Bảo + 64 Khối Kim Cương + 20 Levels"
+
+  tanghinh:
+    name: "&7Ngọc Tàng Hình"
+    material: ENDER_EYE
+    exp: 25
+    items:
+      - "IRON_BLOCK:32"
+    sound: ENTITY_ENDERMAN_TELEPORT
+    lore:
+      - "➛ &7Kích hoạt: &fTàng hình 15 giây"
+      - "➛ &eYêu cầu: 32 Khối Sắt + 25 Levels"
+
+  dichchuyen:
+    name: "&dNgọc Dịch Chuyển"
+    material: ENDER_PEARL
+    exp: 20
+    items:
+      - "DIAMOND_BLOCK:16"
+    sound: ENTITY_ENDERMAN_TELEPORT
+    lore:
+      - "➛ &7Kích hoạt: &fDịch chuyển tới người chơi gần nhất (loại bỏ đối thủ đang combat)"
+      - "➛ &eYêu cầu: 16 Khối Kim Cương + 20 Levels"
+
+  longkinh:
+    name: "&aNgọc Lồng Kính"
+    material: GLASS
+    exp: 20
+    items:
+      - "COAL_BLOCK:64"
+    sound: BLOCK_GLASS_PLACE
+    lore:
+      - "➛ &7Kích hoạt: &fLồng kính 7 block"
+      - "➛ &eTồn tại: 20 giây"
+      - "➛ &eYêu cầu: 64 Khối Than + 20 Levels"
+
+  samset:
+    name: "&bNgọc Sấm Sét"
+    material: TRIDENT
+    exp: 20
+    items:
+      - "IRON_BLOCK:16"
+    sound: ENTITY_LIGHTNING_BOLT_THUNDER
+    lore:
+      - "➛ &7Kích hoạt: &fSấm sét quanh bạn"
+      - "➛ &eYêu cầu: 16 Khối Sắt + 20 Levels"
+
+  bomno:
+    name: "&cNgọc Bom Nổ"
+    material: TNT
+    exp: 30
+    items:
+      - "DIAMOND:16"
+      - "DIAMOND_BLOCK:16"
+    sound: ENTITY_GENERIC_EXPLODE
+    lore:
+      - "➛ &7Kích hoạt: &fNổ mạnh bán kính 5 block (không phá block)"
+      - "➛ &eYêu cầu: 16 Kim Cương + 16 Khối Kim Cương + 30 Levels"
+
+  hacdien:
+    name: "&5Ngọc Hắc Diện"
+    material: CRYING_OBSIDIAN
+    exp: 30
+    items:
+      - "CRYING_OBSIDIAN:32"
+    sound: BLOCK_RESPAWN_ANCHOR_DEPLETE
+    lore:
+      - "➛ &7Kích hoạt: &fGây mù kẻ địch (10s) trong bán kính 7 block"
+      - "➛ &eYêu cầu: 32 Hắc Diện Thạch Khóc + 30 Levels"
+
+  netherite:
+    name: "&8Ngọc Netherite"
+    material: NETHERITE_BLOCK
+    exp: 40
+    items:
+      - "NETHERITE_BLOCK:5"
+    sound: BLOCK_ANVIL_LAND
+    lore:
+      - "➛ &7Kích hoạt: &fMiễn sát thương 8 giây (Resistance IV)"
+      - "➛ &eYêu cầu: 5 Khối Netherite + 40 Levels"
+
+  beacon:
+    name: "&eNgọc Beacon"
+    material: BEACON
+    exp: 50
+    items:
+      - "BEACON:1"
+    sound: ENTITY_WITHER_SPAWN
+    lore:
+      - "➛ &7Kích hoạt: &fSiêu buff 30 giây (Speed II, Strength II, Regen II, Resistance II, Haste II)"
+      - "➛ &eYêu cầu: 1 Beacon + 50 Levels"

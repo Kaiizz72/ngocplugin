@@ -1,0 +1,8 @@
+name: NgocPlugin
+version: 1.0
+main: com.craftvn.ngoc.NgocPlugin
+api-version: 1.20
+commands:
+  muangoc:
+    description: Mở shop ngọc
+    usage: /muangoc
